@@ -3,6 +3,10 @@ venv/
 env/
 .env
 
+# Data Files (Keep your repo light)
+data/
+*.csv
+
 # Python cache
 __pycache__/
 *.pyc
