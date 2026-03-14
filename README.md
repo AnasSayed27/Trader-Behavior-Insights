@@ -6,6 +6,19 @@ This project analyzes the relationship between Bitcoin Market Sentiment (Fear & 
 2. Install dependencies: `pip install -r requirements.txt`
 3. Open `notebooks/trader_analysis.ipynb` in Jupyter or VS Code.
 
+## 📂 Data Sources
+The analysis is based on two primary datasets provided for the evaluation:
+
+1. **Bitcoin Market Sentiment (Fear/Greed Index)**
+   - **Description:** Daily sentiment classifications (Extreme Fear to Extreme Greed).
+   - **Source:** [Google Drive Link](https://drive.google.com/file/d/1PgQC0tO8XN-wqkNyghWc_-mnrYv_nhSf/view?usp=sharing)
+
+2. **Historical Trader Data (Hyperliquid)**
+   - **Description:** 211,224 rows of trade executions including account IDs, PnL, leverage, and timestamps.
+   - **Source:** [Google Drive Link](https://drive.google.com/file/d/1IAfLZwu6rJzyWKgBToqwSmmVYU6VbjVs/view?usp=sharing)
+
+*Note: For repository size optimization, the raw CSV files are excluded via `.gitignore`. Please download the files from the links above and place them in the `/data` folder to reproduce the analysis.*
+
 ## 📊 Methodology
 - **Data Integration:** Merged 211k+ trade records with daily sentiment data using time-normalization and left-joins.
 - **Metric Engineering:** Developed Win Rate percentages and Average PnL metrics to quantify performance across different market moods.
